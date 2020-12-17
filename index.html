@@ -3,7 +3,6 @@
     <head>
         <title>Launch Checklist</title>
         <link rel = "stylesheet" type = "text/css" href = "styles.css" />
-        <script src = "script.js"></script>
     </head>
     <body>
         <h1>Launch Checklist Form</h1>
@@ -19,10 +18,14 @@
                     <label>Co-pilot Name <input type="text" name="copilotName"/></label>
                 </div>
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center; margin: 8 0;">
-                    <label>Fuel Level (L) <input type="text" name="fuelLevel"/></label> 
-                </div>
+                    <label>Fuel Level (L) 
+                        <!-- Fuel Level input type was set to text; changed it to number -->
+                        <input type="text" name="fuelLevel"/></label> 
+                  </div>
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center; margin: 8 0;">
-                    <label>Cargo Mass (kg) <input type="text" name="cargoMass"/></label>
+                    <label>Cargo Mass (kg) 
+                        <!-- Cargo Mass was set to text; changed it to number -->
+                        <input type="text" name="cargoMass"/></label>
                 </div>
                 <button id="formSubmit">Submit</button>
             </form>
@@ -37,6 +40,8 @@
                     <li id="cargoStatus">Cargo mass low enough for launch</li>
                 </ol>
             </div>
-        </div>    
+        </div>   
+        <!-- Moved JS scource to end of body  -->
+        <script src = script.js></script>
     </body>
 </html>
